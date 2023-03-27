@@ -1,0 +1,5 @@
+@media only screen and (orientation: portrait) {
+    #sidebar-left, #sidebar-right {
+      display: none;
+    }
+  }
