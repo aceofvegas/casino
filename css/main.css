@@ -79,6 +79,9 @@ body {
     -moz-flex: 1;
     flex: 1;
   }
+  #sidebar-left a {
+    color: black;
+  }
   
   #main {
      width:60%;
