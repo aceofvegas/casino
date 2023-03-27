@@ -9,7 +9,7 @@
 @media only screen and (orientation: portrait) {
     /* (B) DEALER & PLAYER */
     /* (B1) CONTAINERS */
-    #deal-data, #play-data, #play-control { font-family: digifont, sans-serif; }
+    #deal-data, #play-data, #play-control, #bank { font-family: digifont, sans-serif; }
     #deal-data, #play-data, #deal-cards, #play-cards, #play-control { padding: 20px; }
     #deal-data, #play-data { font-weight: 700; }
     /* #deal-cards, #play-cards { min-height: 24px; } */
@@ -45,6 +45,8 @@
     #deal-first .front { display: none; }
     #deal-first.show .back { display: none; }
     #deal-first.show .front { display: block; }
+
+    #play-data, #deal-data, #bank { width: 80vw; }
 
     /* (C) PLAY CONTROLS */
     #playc-hit, #playc-stand, #playc-start {
