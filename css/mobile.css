@@ -2,9 +2,9 @@
     #sidebar-left, #sidebar-right {
       display: none;
     }
+    body {
+        font-size: 200%;
+      }
 }
 
-body {
-    font-size: 200%;
-  }
 
