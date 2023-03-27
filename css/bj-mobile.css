@@ -52,7 +52,7 @@
     #deal-first.show .back { display: none; }
     #deal-first.show .front { display: block; }
 
-    #play-data, #deal-data, #bank, #p-bet { font-size: 2.85em; }
+    #play-data, #deal-data, #bank, #p-bet { font-size: 2.25em; }
 
     /* (C) PLAY CONTROLS */
     #playc-hit, #playc-stand, #playc-start {
