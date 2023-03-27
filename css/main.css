@@ -15,6 +15,11 @@
       display: none;
     }
 }
+@media only screen and (orientation: portrait) {
+  #sidebar-left, #sidebar-right {
+    display: none;
+  }
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -23,7 +28,7 @@ body {
   }
   
   #container {
-    width: 100%;
+    width: 100vw;
     margin: 0 auto;
   }
   
