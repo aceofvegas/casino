@@ -44,7 +44,7 @@ var bj = {
 
         document.getElementById("bet-up").onclick = bj.betup;
         document.getElementById("bet-down").onclick = bj.betdown;
-        bj.track_min.innerHTML = "The minimum bet for this table is $" + str(bj.min_bet)
+        //bj.track_min.innerHTML = "The minimum bet for this table is $";
     },
 
     betup : () => {
@@ -74,6 +74,7 @@ var bj = {
         bj.hpcon.classList.add("started");
         bj.bankroll -= bj.bet_size // place bet when round starts 
         bj.bank.innerHTML = bj.bankroll;
+        bj.track_min = document.getElementById("min-bet");
 
         // (C2) RESHUFFLE DECK
         // S: SHAPE (0 = HEART, 1 = DIAMOND, 2 = CLUB, 3 = SPADE)
