@@ -58,7 +58,6 @@
   }
   #change-bet input {
     cursor: pointer;
-    text-align: right;
     font-weight: 700;
     padding: 10px 10px;
     border: 0;
@@ -67,4 +66,5 @@
   }
   #playc-hit, #playc-stand { display: none; }
   #play-control.started #playc-start { display: none; }
+  #play-control.started #change-bet { display: none; }
   #play-control.started #playc-hit, #play-control.started #playc-stand { display: inline-block; }
