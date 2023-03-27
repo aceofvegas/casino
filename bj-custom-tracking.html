@@ -1,0 +1,91 @@
+<html>
+<head>
+<title>Blackjack</title>
+<link rel="stylesheet" href="css/bj.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/mobile.css">
+<script src="js/bj3.js"></script>
+<script src="js/latest.js"></script>
+<script src="js/menu.js"></script>
+ 
+</head>
+<body>
+<div id="container">
+  <div id="header">
+    <h1>WELCOME TO ACE OF VEGAS</h1>
+  </div>
+  <div id="menu">
+    <ul>
+        <li><a id="menu1" href="#">Soccer</a></li>
+        <li><a id="menu2" href="basketball.html">Basketball</a></li>
+        <li><a id="menu3" href="blackj.html">Tennis</a></li>
+        <li><a id="menu4" href="cricket.html">Cricket</a></li>
+        <li><a id="menu5" href="more.html">More Sports</a></li>
+    </ul>
+  </div>
+  <div id="content">
+    <div id="sidebar-left">
+      <h3>Latest Scores</h3>
+      <p id="latest1">Soccer: Manchester United 2 - 1 Liverpool</p>
+      <p id="latest2">Basketball: Lakers 110 - 105 Celtics</p>
+      <p id="latest3">Tennis: Djokovic beats Nadal in Australian Open final</p>
+      <p id="latest4">Cricket: India wins the test series against England</p>
+    </div>
+    
+    <div id="main">
+        <h2>Blackjack game</h2>
+        <p>Still a work in progress with minor bugs:</p>
+        <p>Bug: dealer sometimes draws while player is drawing. Dealer should only draw after player finishes</p>
+        <p>Bug: function udating players money isnt doing the job</p>
+        <p>Bug: if player draws blackjack it wont end game</p>
+        <h6 id="min_bet">Min bet is $</h6>
+        <!-- (A) DEALER -->
+        <!-- (A1) DEALER'S POINTS + STAND -->
+        <div id="deal-data">
+        <span id="deal-stand">STAND</span>
+        Dealer's Hand - <span id="deal-points"></span>
+        </div>
+
+        <!-- (A2) DEALER'S CARDS -->
+        <div id="deal-cards"></div>
+
+        <!-- (B) PLAYER -->
+        <!-- (B1) PLAYERS'S POINTS + STAND -->
+        <div id="play-data">
+        <span id="play-stand">STAND</span>
+        Your Hand - <span id="play-points">0</span>
+        </div>
+
+        <!-- (B2) PLAYER'S CARDS -->
+        <div id="play-cards"></div>
+
+        <!-- (C) PLAY! -->
+        <div id="play-control">
+            <!-- (C1) START -->
+            <input type="button" id="playc-start" value="Play!">
+
+            <!-- (C2) HIT OR STAND -->
+            <input type="button" id="playc-hit" value="Hit">
+            <input type="button" id="playc-stand" value="Stand">
+            <input type="button" id="bet-up" value="+">
+            <input type="button" id="bet-down" value="-">
+        </div>
+
+        <!-- Track-->
+        <div id="bank"> Acount: $<span id="player-bank">1000</span> --------betting $<span id="cur-bet">0</span> </div>
+    </div>
+    
+    <div id="sidebar-right">
+      <h3>Upcoming Events</h3>
+      <p>Soccer: Champions League quarter-finals on April 5th and 6th</p>
+      <p>Basketball: NBA playoffs start on April 16th</p>
+      <p>Tennis: French Open begins on May 22nd</p>
+      <p>Cricket: T20 World Cup starts on October 18th</p>
+    </div>
+  </div>
+  <div id="footer">
+    <p>© 2023 Ace of Vegas. All rights reserved.</p>
+  </div>
+</div>
+</body>
+</html>

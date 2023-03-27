@@ -8,9 +8,9 @@ var menu = {
     // links
     link1 : 'index',  // simply change these to change menu for whole site
     link2 : "#",
-    link3 : "bj",
+    link3 : "blackjack",
     link4 : "bj-custom",
-    link5 : "#",
+    link5 : "bj3",
   
     // (B) INITIALIZE GAME
     init : () => {
