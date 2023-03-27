@@ -1,0 +1,85 @@
+/* for beter mobile experience playing game */
+
+
+@font-face {
+    font-family: digifont;
+    src: url(../fonts/digital.ttf);
+}
+
+@media only screen and (orientation: portrait) {
+    /* (B) DEALER & PLAYER */
+    /* (B1) CONTAINERS */
+    #deal-data, #play-data, #play-control { font-family: digifont, sans-serif; }
+    #deal-data, #play-data, #deal-cards, #play-cards, #play-control { padding: 20px; }
+    #deal-data, #play-data { font-weight: 700; }
+    /* #deal-cards, #play-cards { min-height: 24px; } */
+    #deal-data { background: #c9e1ff; }
+    #deal-cards { background: #e4f0ff; }
+    #play-data { background: #ffcfcf; }
+    #play-cards { background: #ffe7e7; }
+    #play-control { background: #f2daff; }
+    #bank { 
+    padding: 10px;
+    background: #a5ebff;
+    }
+    #deal-stand, #play-stand {
+    display: none; padding: 5px;
+    color: #fff; background: #ab2323;
+    }
+    #deal-stand.stood, #play-stand.stood { display: inline-block; }
+
+    /* (B2) CARDS */
+    #deal-cards, #play-cards {
+    display: flex;
+    flex-wrap: wrap;
+    }
+    .bj-card {
+    display: flex;
+    align-items: center; justify-content: center;
+    margin: 5px;
+    /* width: 10%; height: 10%;*/
+    font-size: 2em;
+    text-align: center;
+    background: #fff;
+    }
+    #deal-first .front { display: none; }
+    #deal-first.show .back { display: none; }
+    #deal-first.show .front { display: block; }
+
+    /* (C) PLAY CONTROLS */
+    #playc-hit, #playc-stand, #playc-start {
+    display: flex;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 10px 20px;
+    width: 10vw;
+    border: 0;
+    color: #fff;
+    background: #4381de;
+    }
+    #bet-up {
+    justify-content: right;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 10px 10px;
+    border: 0;
+    color: #fff;
+    background: #00112c;
+    }
+    #bet-down {
+    justify-content: right;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 10px 10px;
+    border: 0;
+    color: #fff;
+    background: #001d47;
+    }
+
+    #playc-hit, #playc-stand, #playc-start, #bet-up, #bet-down { font-size: 200%; }
+    #playc-start, #bet-up, #bet-down { display: inline-block; }
+    #playc-hit, #playc-stand { display: none; }
+    #play-control.started #playc-start { display: none; }
+    #play-control.started #bet-up, #play-control.started #bet-down { display: none; }
+    #play-control.started #playc-hit, #play-control.started #playc-stand { display: inline-block; }
+}
