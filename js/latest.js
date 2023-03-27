@@ -1,10 +1,18 @@
 var lt = {
-    // (A) PROPERTIES
 
-    l1 : "Wow this is cool",
+    h1 : "Latest News", //heading
+
+
+    l1 : "Jackson Requests Trade",
     l2 : "Looks good still",
     l3 : "Still going nice",
     l4 : "Made it here",
+    // links
+    link1 : "https://www.espn.com/nfl/story/_/id/35968103/qb-lamar-jackson-says-requested-trade-ravens",  // simply change these to change links
+    link2 : "#",
+    link3 : "bj.html",
+    link4 : "bj-custom.html",
+    link5 : "#",
   
     // (B) INITIALIZE GAME
     init : () => {
@@ -13,6 +21,7 @@ var lt = {
         lt.two = document.getElementById("latest2");
         lt.three = document.getElementById("latest3");
         lt.four = document.getElementById("latest4");
+        lt.head = document.getElementById("js-head1");
 
         lt.start()
     },  
@@ -23,6 +32,12 @@ var lt = {
         lt.two.innerHTML = lt.l2;
         lt.three.innerHTML = lt.l3;
         lt.four.innerHTML = lt.l4;
+        lt.head.innerHTML = lt.h1;
+        lt.one = document.getElementById("latest1").href = menu.link1;
+        lt.two = document.getElementById("latest2").href = menu.link2;
+        lt.three = document.getElementById("latest3").href = menu.link3;
+        lt.four = document.getElementById("latest4").href = menu.link4;
+        lt.head = document.getElementById("js-head1").href = menu.link5;
     },
 
 };
