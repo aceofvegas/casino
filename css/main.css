@@ -73,6 +73,7 @@ body {
   
   #sidebar-left {
     width: 20%;
+    color: black;
     background-color: rgb(196, 240, 255);
     -webkit-flex: 1;
     -moz-flex: 1;

@@ -44,7 +44,7 @@ var bj = {
 
         document.getElementById("bet-up").onclick = bj.betup;
         document.getElementById("bet-down").onclick = bj.betdown;
-        bj.track_min.innerHTML = "The minimum bet for this table is $" + str(bj.bet_size)
+        bj.track_min.innerHTML = "The minimum bet for this table is $" + str(bj.min_bet)
     },
 
     betup : () => {
@@ -56,8 +56,8 @@ var bj = {
     },
     betdown : () => {
         bj.bet_size -= bj.multi;
-        if (bj.bet_size < min_bet) {
-            bj.bet_size = min_bet; //if bet is less than min, change to min
+        if (bj.bet_size < bj.min_bet) {
+            bj.bet_size = bj.min_bet; //if bet is less than min, change to min
         }
     },
   
@@ -67,7 +67,7 @@ var bj = {
         bj.deck = [];  bj.dealer = [];  bj.player = [];
         bj.dpoints = 0;  bj.ppoints = 0;
         bj.dstand = false;  bj.pstand = false;
-        bj.hdpoints.innerHTML = "?"; bj.hppoints.innerHTML = 0;
+        bj.hdpoints.innerHTML = ""; bj.hppoints.innerHTML = 0;
         bj.hdhand.innerHTML = ""; bj.hphand.innerHTML = "";
         bj.hdstand.classList.remove("stood");
         bj.hpstand.classList.remove("stood");

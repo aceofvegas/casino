@@ -33,11 +33,11 @@ var lt = {
         lt.three.innerHTML = lt.l3;
         lt.four.innerHTML = lt.l4;
         lt.head.innerHTML = lt.h1;
-        lt.one = document.getElementById("latest1").href = menu.link1;
-        lt.two = document.getElementById("latest2").href = menu.link2;
-        lt.three = document.getElementById("latest3").href = menu.link3;
-        lt.four = document.getElementById("latest4").href = menu.link4;
-        lt.head = document.getElementById("js-head1").href = menu.link5;
+        lt.one = document.getElementById("latest1").href = lt.link1;
+        lt.two = document.getElementById("latest2").href = lt.link2;
+        lt.three = document.getElementById("latest3").href = lt.link3;
+        lt.four = document.getElementById("latest4").href = lt.link4;
+        lt.head = document.getElementById("js-head1").href = lt.link5;
     },
 
 };
