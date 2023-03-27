@@ -49,6 +49,7 @@
   
   /* (C) PLAY CONTROLS */
   #play-control input {
+    display: flex;
     cursor: pointer;
     font-weight: 700;
     padding: 10px 20px;
@@ -57,7 +58,6 @@
     background: #4381de;
   }
   #change-bet input {
-    display: flex;
     justify-content: right;
     cursor: pointer;
     font-weight: 700;
