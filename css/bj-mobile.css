@@ -9,7 +9,7 @@
 @media only screen and (orientation: portrait) {
     /* (B) DEALER & PLAYER */
     /* (B1) CONTAINERS */
-    #deal-data, #play-data, #play-control, #bank { font-family: digifont, sans-serif; }
+    #deal-data, #play-data, #play-control, #bank, #p-bet { font-family: digifont, sans-serif; }
     #deal-data, #play-data, #deal-cards, #play-cards, #play-control { padding: 20px; }
     #deal-data, #play-data { font-weight: 700; }
     /* #deal-cards, #play-cards { min-height: 24px; } */
@@ -18,10 +18,16 @@
     #play-data { background: #ffcfcf; }
     #play-cards { background: #ffe7e7; }
     #play-control { background: #f2daff; }
-    #bank { 
-    padding: 10px;
-    background: #a5ebff;
+    
+    #p-bet { 
+        padding: 10px;
+        background: #00c8ff;
     }
+    #bank { 
+        padding: 10px;
+        background: #a5ebff;
+    }
+    
     #deal-stand, #play-stand {
     display: none; padding: 5px;
     color: #fff; background: #ab2323;
@@ -46,7 +52,7 @@
     #deal-first.show .back { display: none; }
     #deal-first.show .front { display: block; }
 
-    #play-data, #deal-data, #bank { width: 80vw; }
+    #play-data, #deal-data, #bank { font-size: 4em; }
 
     /* (C) PLAY CONTROLS */
     #playc-hit, #playc-stand, #playc-start {

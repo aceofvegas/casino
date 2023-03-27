@@ -8,7 +8,7 @@
 
 /* (B) DEALER & PLAYER */
 /* (B1) CONTAINERS */
-#deal-data, #play-data, #play-control { font-family: digifont, sans-serif; }
+#deal-data, #play-data, #play-control, #p-bet, #bank { font-family: digifont, sans-serif; }
 #deal-data, #play-data, #deal-cards, #play-cards, #play-control { padding: 20px; }
 #deal-data, #play-data { font-weight: 700; }
 /* #deal-cards, #play-cards { min-height: 24px; } */
@@ -17,6 +17,10 @@
 #play-data { background: #ffcfcf; }
 #play-cards { background: #ffe7e7; }
 #play-control { background: #f2daff; }
+#p-bet { 
+  padding: 10px;
+  background: #00c8ff;
+}
 #bank { 
   padding: 10px;
   background: #a5ebff;
