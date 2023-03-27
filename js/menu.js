@@ -9,7 +9,7 @@ var menu = {
     link1 : 'index.html',  // simply change these to change menu for whole site
     link2 : "#",
     link3 : "bj.html",
-    link4 : "#",
+    link4 : "#bj-custom.html",
     link5 : "#",
   
     // (B) INITIALIZE GAME
