@@ -3,13 +3,13 @@ var lt = {
     h1 : "Latest News", //heading
 
 
-    l1 : "Jackson Requests Trade",
-    l2 : "Looks good still",
+    l2 : "Jackson Requests Trade",
+    l1 : "Nets shut down Simmons",
     l3 : "Still going nice",
     l4 : "Made it here",
     // links
-    link1 : "https://www.espn.com/nfl/story/_/id/35968103/qb-lamar-jackson-says-requested-trade-ravens",  // simply change these to change links
-    link2 : "#",
+    link2 : "https://www.espn.com/nfl/story/_/id/35968103/qb-lamar-jackson-says-requested-trade-ravens",  // simply change these to change links
+    link1 : "https://www.espn.com/nba/story/_/id/35981207/brooklyn-nets-shutting-ben-simmons-rest-season",
     link3 : "bj.html",
     link4 : "bj-custom.html",
     link5 : "#",

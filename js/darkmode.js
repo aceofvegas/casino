@@ -13,6 +13,8 @@ function darkfun() {
     }
 };
 
+//sessionStorage.setItem("dark",0)
+
 var darkonoff = 0;
 
 function bjdark() {
