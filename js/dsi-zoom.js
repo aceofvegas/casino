@@ -7,4 +7,4 @@ window.addEventListener(
     }
   },
   { passive: false }
-);
+)
