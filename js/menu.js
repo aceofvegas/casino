@@ -1,13 +1,13 @@
 var menu = {
     // name
     l1 : "Home",
-    l2 : "Basketball",
-    l3 : "Blackjack",
-    l4 : "Football",
+    l2 : "Casino",
+    l3 : "News",
+    l4 : "About",
     l5 : "More",
     // links
     link1 : 'index',  // simply change these to change menu for whole site
-    link2 : "#",
+    link2 : "casino",
     link3 : "blackjack",
     link4 : "bj-custom",
     link5 : "bj3",
