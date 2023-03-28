@@ -3,14 +3,15 @@
 <meta name="viewport" content="user-scalable=no">
 <title>Blackjack</title>
 <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-<link rel="stylesheet" href="css/bj.css">
+<link id="bjd" rel="stylesheet" href="css/bj.css">
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/mobile.css">
-<link rel="stylesheet" href="css/bj-mobile.css">
+<link id="bjdm"  rel="stylesheet" href="css/bj-mobile.css">
 <script src="js/bj-custom-tracking.js"></script>
 <script src="js/latest.js"></script>
 <script src="js/menu.js"></script>
 <script src="js/dsi-zoom"></script>
+<script src="js/darkmode.js"></script>
  
 </head>
 <body>
@@ -18,15 +19,16 @@
   <div id="header">
     <h1>ACE OF VEGAS</h1>
   </div>
-  <div id="menu">
+  <nav id="menu">
     <ul>
         <li><a id="menu1" href="#">Soccer</a></li>
         <li><a id="menu2" href="basketball.html">Basketball</a></li>
         <li><a id="menu3" href="blackj.html">Tennis</a></li>
         <li><a id="menu4" href="cricket.html">Cricket</a></li>
         <li><a id="menu5" href="more.html">More Sports</a></li>
+        <li class="lightswitch" onclick="darkfun()">☯ </li>
     </ul>
-  </div>
+  </nav>
   <div id="content">
     <div id="sidebar-left">
       <h3>Latest Scores</h3>
@@ -43,6 +45,8 @@
         <p>Bug: function udating players money isnt doing the job</p>
         <p>Bug: if player draws blackjack it wont end game</p>
         <h6 id="min_bet">Min bet for this table is $25</h6>
+
+
         <div id="p-bet">Bet Size: $<span id="cur-bet">0</span> </div>
         <!-- (A) DEALER -->
         <!-- (A1) DEALER'S POINTS + STAND -->
@@ -77,7 +81,6 @@
         </div>
 
         <!-- Track-->
-        <div id="p-bet">Bet Size: $<span id="cur-bet">0</span> </div>
         <div id="bank"> Acount: $<span id="player-bank">1000</span> </div>
     </div>
     

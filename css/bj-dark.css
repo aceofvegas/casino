@@ -1,0 +1,88 @@
+/* (A) ENTIRE PAGE */
+@font-face {
+    font-family: digifont;
+    src: url(../fonts/digital.ttf);
+}
+
+/* (B) DEALER & PLAYER */
+/* (B1) CONTAINERS */
+#deal-data, #play-data, #play-control, #p-bet, #bank { font-family: digifont, sans-serif; }
+#deal-data, #play-data, #deal-cards, #play-cards, #play-control { padding: 20px; }
+#deal-data, #play-data { font-weight: 700; }
+/* #deal-cards, #play-cards { min-height: 24px; } */
+#deal-data { background: #001546; }
+#deal-cards { background: #0a2054; }
+#play-data { background: #29003b; }
+#play-cards { background: #390051; }
+#play-control { background: #0d0014; }
+#p-bet { 
+  border-style: solid;
+  padding: 10px;
+  background: #002a36;
+}
+#bank { 
+  border-style: solid;
+  padding: 10px;
+  background: #002a35;
+}
+#deal-stand, #play-stand {
+  display: none; padding: 5px;
+  color: #fff; background: #ab2323;
+}
+#deal-stand.stood, #play-stand.stood { display: inline-block; }
+
+/* (B2) CARDS */
+#deal-cards, #play-cards {
+  border-bottom: solid;
+  display: flex;
+  flex-wrap: wrap;
+}
+.bj-card {
+  display: flex;
+  align-items: center; justify-content: center;
+  margin: 5px;
+  /* width: 10%; height: 10%;*/
+  font-size: 2em;
+  text-align: center;
+  background: #131313;
+}
+#deal-first .front { display: none; }
+#deal-first.show .back { display: none; }
+#deal-first.show .front { display: block; }
+
+/* (C) PLAY CONTROLS */
+#playc-hit, #playc-stand, #playc-start {
+  display: flex;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 10px 20px;
+  width: 10vw;
+  border: 0;
+  color: #fff;
+  background: #4381de;
+}
+#bet-up {
+  justify-content: right;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 10px 10px;
+  border: 0;
+  color: #000000;
+  background: #00bd32;
+}
+#bet-down {
+  justify-content: flex-end;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 10px 10px;
+  border: 0;
+  color: #000000;
+  background: #ff002f;
+}
+
+
+#playc-start, #bet-up, #bet-down { display: inline-block; }
+#playc-hit, #playc-stand { display: none; }
+#play-control.started #playc-start { display: none; }
+#play-control.started #bet-up, #play-control.started #bet-down { display: none; }
+#play-control.started #playc-hit, #play-control.started #playc-stand { display: inline-block; }

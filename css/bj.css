@@ -4,8 +4,6 @@
     src: url(../fonts/digital.ttf);
 }
 
-
-
 /* (B) DEALER & PLAYER */
 /* (B1) CONTAINERS */
 #deal-data, #play-data, #play-control, #p-bet, #bank { font-family: digifont, sans-serif; }
@@ -18,10 +16,12 @@
 #play-cards { background: #ffe7e7; }
 #play-control { background: #f2daff; }
 #p-bet { 
+  border-style: solid;
   padding: 10px;
   background: #00c8ff;
 }
 #bank { 
+  border-style: solid;
   padding: 10px;
   background: #a5ebff;
 }
@@ -33,6 +33,7 @@
 
 /* (B2) CARDS */
 #deal-cards, #play-cards {
+  border-bottom: solid;
   display: flex;
   flex-wrap: wrap;
 }
@@ -70,7 +71,7 @@
   background: #00112c;
 }
 #bet-down {
-  justify-content: right;
+  justify-content: flex-end;
   cursor: pointer;
   font-weight: 700;
   padding: 10px 10px;
@@ -78,6 +79,8 @@
   color: #fff;
   background: #001d47;
 }
+
+
 #playc-start, #bet-up, #bet-down { display: inline-block; }
 #playc-hit, #playc-stand { display: none; }
 #play-control.started #playc-start { display: none; }

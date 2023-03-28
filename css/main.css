@@ -20,104 +20,117 @@ body {
     font-family: Arial, sans-serif;
     background-color: rgb(255, 255, 255);
     margin: 0;
-  }
+}
+
+.dark-mode {
+  background-color: rgb(24, 24, 24);
+  color: white;
+}
   
-  #container {
-    width: 100vw;
-    margin: 0 auto;
-  }
-  
-  #header {
-    font-family: headfont, sans-serif;
-    font-size: 1.5em; /* 30px/16=1.875em */
-    text-align: center;
-    color: white;
-    background-color: rgb(0, 162, 255);
-    padding: 1px;
-  }
-  
-  #menu {
-    background-color: rgb(37, 37, 37);
-    position: sticky;
-    top: 0;
-  }
-  
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  li {
-    display: inline-block;
-    width: 18%;
-    text-align: center;
-  }
-  
-  a {
-    display: block;
-    color: white;
-    padding: 10px;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    background-color: rgb(176, 176, 176);
-  }
-  
-  #content {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: flex;
-  }
-  
-  #sidebar-left {
-    width: 20%;
-    color: black;
-    background-color: rgb(196, 240, 255);
-    -webkit-flex: 1;
-    -moz-flex: 1;
-    flex: 1;
-  }
-  #sidebar-left a {
-    color: black;
-  }
-  
-  #main {
-     width:60%;
-     -webkit-flex :3; 
-     -moz-flex :3; 
-     flex :3; 
-     margin-left :2%; 
-     margin-right :2%;
-  }
-  #bank {
-    font-family: digifont, sans-serif;
-  }
-  
-  h2, h3 {
-     margin :10px; 
-  }
-  
-  img {
-     width :50%; 
-  }
-  
-  p {
-     margin :10px; 
-  }
-  
-  #sidebar-right {
-     width :20%; 
-     background-color :rgb(182, 223, 255); 
-     -webkit-flex :1; 
-     -moz-flex :1; 
-     flex :1; 
-     right :0; 
-  }
-  
-  #footer {
-     text-align :center; 
-     color :white; 
-     background-color :rgb(127, 127, 127);
-  }
+#container {
+  width: 100vw;
+  margin: 0 auto;
+}
+
+#header {
+  font-family: headfont, sans-serif;
+  font-size: 1.5em; /* 30px/16=1.875em */
+  text-align: center;
+  color: white;
+  background-color: rgb(0, 162, 255);
+  padding: 1px;
+}
+
+#menu {
+  background-color: rgb(37, 37, 37);
+  position: sticky;
+  top: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li, li.lightswitch { 
+  display: inline-block; 
+}
+
+li {
+  width: 17vw;
+  text-align: center;
+}
+
+li.lightswitch {
+  width: 3vw;
+  cursor: pointer;
+}
+
+a, li.lightswitch {
+  display: inline-block;  /* this line fixed the menu not on same line bug*/
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+a:hover, li.lightswitch:hover {
+  background-color: rgb(176, 176, 176);
+}
+
+#content {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+}
+
+#sidebar-left {
+  width: 20%;
+  color: black;
+  background-color: rgb(196, 240, 255);
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  flex: 1;
+}
+#sidebar-left a {
+  color: black;
+}
+
+#main {
+    width:60%;
+    -webkit-flex :3; 
+    -moz-flex :3; 
+    flex :3; 
+    margin-left :2%; 
+    margin-right :2%;
+}
+#bank {
+  font-family: digifont, sans-serif;
+}
+
+h2, h3 {
+    margin :10px; 
+}
+
+img {
+    width :50%; 
+}
+
+p {
+    margin :10px; 
+}
+
+#sidebar-right {
+    width :20%; 
+    background-color :rgb(182, 223, 255); 
+    -webkit-flex :1; 
+    -moz-flex :1; 
+    flex :1; 
+    right :0; 
+}
+
+#footer {
+    text-align :center; 
+    color :white; 
+    background-color :rgb(127, 127, 127);
+}

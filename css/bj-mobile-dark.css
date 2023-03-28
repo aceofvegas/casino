@@ -13,21 +13,20 @@
     #deal-data, #play-data, #deal-cards, #play-cards, #play-control { padding: 20px; }
     #deal-data, #play-data { font-weight: 700; }
     /* #deal-cards, #play-cards { min-height: 24px; } */
-    #deal-data { background: #c9e1ff; }
-    #deal-cards { background: #e4f0ff; }
-    #play-data { background: #ffcfcf; }
-    #play-cards { background: #ffe7e7; }
-    #play-control { background: #f2daff; }
-    
+    #deal-data { background: #001546; }
+    #deal-cards { background: #0a2054; }
+    #play-data { background: #29003b; }
+    #play-cards { background: #390051; }
+    #play-control { background: #0d0014; }
     #p-bet { 
         border-style: solid;
         padding: 10px;
-        background: #00c8ff;
+        background: #002a36;
     }
     #bank { 
         border-style: solid;
         padding: 10px;
-        background: #a5ebff;
+        background: #002a35;
     }
     
     #deal-stand, #play-stand {
@@ -49,7 +48,7 @@
     /* width: 10%; height: 10%;*/
     font-size: 4em;
     text-align: center;
-    background: #fff;
+    background: #131313;
     }
     #deal-first .front { display: none; }
     #deal-first.show .back { display: none; }
@@ -73,16 +72,16 @@
     font-weight: 700;
     padding: 10px 10px;
     border: 0;
-    color: #fff;
-    background: #00112c;
+    color: #000000;
+    background: #00bd32;
     }
     #bet-down {
     justify-content: right;
     font-weight: 700;
     padding: 10px 10px;
     border: 0;
-    color: #fff;
-    background: #001d47;
+    color: #000000;
+    background: #ff002f;
     }
 
     #playc-hit, #playc-stand, #playc-start, #bet-up, #bet-down { font-size: 200%; }
