@@ -4,7 +4,8 @@
     }
     body {
         font-size: 200%;
-      }
+    }
+    #menu { font-size: 300%; }
 }
 
 
