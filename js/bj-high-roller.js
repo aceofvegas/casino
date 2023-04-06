@@ -23,6 +23,7 @@ var bj = {
     min_bet : 2500, // bet must be at least
     bet_size : 2500, //actual amount bet
     multi : 500, //increase bet multiplier 
+    betup : 0,
   
     // (B) INITIALIZE GAME
     init : () => {
@@ -51,9 +52,18 @@ var bj = {
     },
 
     betup : () => {
-        bj.bet_size += bj.multi;
+        bj.betup += 1;
+        if (bj.betup > 4) {
+            bj.bet_size += bj.multi * 5; //if bet is more than player has, change to all in
+        }
+        else if (bj.betup > 8) {
+            bj.bet_size += bj.multi * 10; //if bet is more than player has, change to all in
+        }
         if (bj.bet_size > bj.bankroll) {
             bj.bet_size = bj.bankroll; //if bet is more than player has, change to all in
+        }
+        else {
+          bj.bet_size += bj.multi;
         }
         bj.trackb.innerHTML = bj.bet_size;
     },
@@ -63,6 +73,7 @@ var bj = {
             bj.bet_size = bj.min_bet; //if bet is less than min, change to min
         }
         bj.trackb.innerHTML = bj.bet_size;
+        bj.betup = 0;
     },
   
 
