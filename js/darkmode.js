@@ -20,8 +20,10 @@ var darkonoff = 0;
 function bjdark() {
     one = document.getElementById("bjd").href = 'css/bj-dark.css';
     two = document.getElementById("bjdm").href = 'css/bj-mobile-dark.css';
+    three = document.getElementById("tablestyle").href = 'css/table-dark.css';
 };
 function bjlight() {
     one = document.getElementById("bjd").href = 'css/bj.css';
     two = document.getElementById("bjdm").href = 'css/bj-mobile.css';
+    three = document.getElementById("tablestyle").href = 'css/table-light.css';
 };

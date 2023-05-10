@@ -22,6 +22,17 @@ body {
     margin: 0;
 }
 
+.full-width-table {
+    width: 100%; /* make the table take up 100% of the available space */
+    border-collapse: collapse; /* remove the gaps between cells */
+  }
+
+  .full-width-table th, .full-width-table td {
+    border: 1px solid black; /* add borders to the cells */
+    padding: 10px; /* add some space around the cell content */
+    text-align: left; /* align the text to the left */
+  }
+
 .dark-mode {
   background-color: rgb(31, 31, 31);
   color: rgb(224, 224, 224);
