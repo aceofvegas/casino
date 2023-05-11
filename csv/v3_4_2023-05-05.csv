@@ -1,0 +1,15 @@
+,home_team,home_starter,home_est,start_time,away_team,away_starter,away_est,O/U_line,est_total,model_decision,under_probs,over_probs
+0,CHC,Justin Steele,4.28,2:20PM,MIA,Edward Cabrera,3.63,9.0,7.9,UNDER,0.7285,0.2715
+1,PIT,Rich Hill,3.85,6:35PM,TOR,Chris Bassitt,3.79,9.0,7.64,UNDER,0.7606,0.2394
+2,CIN,Hunter Greene,4.52,6:40PM,CHW,Lance Lynn,3.56,8.5,8.08,likely U,0.581,0.419
+3,TBR,Yonny Chirinos,4.83,6:40PM,NYY,Jhony Brito,3.71,8.5,8.54,likely U,0.518,0.482
+4,PHI,Zack Wheeler,5.34,7:05PM,BOS,Chris Sale,5.6,8.0,10.94,OVER,0.2375,0.7625
+5,CLE,Peyton Battenfield,3.33,7:10PM,MIN,Bailey Ober,4.26,8.5,7.58,UNDER,0.6503,0.3497
+6,NYM,Kodai Senga,4.35,7:10PM,COL,Antonio Senzatela,3.61,8.5,7.96,likely U,0.5982,0.4018
+7,ATL,Max Fried,4.27,7:20PM,BAL,Dean Kremer,4.49,8.5,8.77,likely O,0.4866,0.5134
+8,KCR,Brad Keller,4.31,8:10PM,OAK,Kyle Muller,4.66,9.5,8.97,likely U,0.5913,0.4087
+9,STL,Jordan Montgomery,4.61,8:15PM,DET,Matthew Boyd,3.43,8.0,8.04,likely U,0.5874,0.4126
+10,ARI,Merrill Kelly,4.35,9:40PM,WSN,Josiah Gray,4.05,9.0,8.4,UNDER,0.6656,0.3344
+11,SDP,Yu Darvish,3.88,9:40PM,LAD,Clayton Kershaw,4.81,7.5,8.69,OVER,0.3616,0.6384
+12,SEA,Luis Castillo,4.11,10:10PM,HOU,Cristian Javier,4.27,7.0,8.37,likely O,0.402,0.598
+13,SFG,Sean Manaea,4.43,10:15PM,MIL,Corbin Burnes,4.91,8.0,9.34,likely O,0.4118,0.5882

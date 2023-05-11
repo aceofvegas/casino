@@ -47,7 +47,7 @@
     align-items: center; justify-content: center;
     margin: 5px;
     /* width: 10%; height: 10%;*/
-    font-size: 4em;
+    font-size: 2.25em;
     text-align: center;
     background: #fff;
     }
@@ -55,7 +55,7 @@
     #deal-first.show .back { display: none; }
     #deal-first.show .front { display: block; }
 
-    #play-data, #deal-data, #bank, #p-bet { font-size: 2.25em; }
+    #play-data, #deal-data, #bank, #p-bet { font-size: 1.25em; }
 
     /* (C) PLAY CONTROLS */
     #playc-hit, #playc-stand, #playc-start {
@@ -85,7 +85,7 @@
     background: #001d47;
     }
 
-    #playc-hit, #playc-stand, #playc-start, #bet-up, #bet-down { font-size: 200%; }
+    #playc-hit, #playc-stand, #playc-start, #bet-up, #bet-down { font-size: 100%; }
     #playc-start, #bet-up, #bet-down { display: inline-block; }
     #playc-hit, #playc-stand { display: none; }
     #play-control.started #playc-start { display: none; }

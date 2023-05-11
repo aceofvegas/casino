@@ -1,0 +1,32 @@
+/* for beter mobile experience playing game */
+
+
+@font-face {
+    font-family: digifont;
+    src: url(../fonts/digital.ttf);
+}
+
+@media only screen and (orientation: portrait) {
+    .full-width-table {
+
+    width: 100%; /* make the table take up 100% of the available space */
+
+    border-collapse: collapse; /* remove the gaps between cells */
+  }
+
+  .full-width-table th, .full-width-table td {
+    border: 1px solid black; /* add borders to the cells */
+    padding: 10px; /* add some space around the cell content */
+    text-align: left; /* align the text to the left */
+    background-color: rgb(31, 31, 31);
+
+    color: rgb(224, 224, 224);
+  }
+  
+   #header {
+    
+    color: white;
+    /*background-color: dark blue;*/
+    padding: 1px;
+  }
+}

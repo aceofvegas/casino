@@ -6,10 +6,10 @@ var menu = {
     l4 : "About",
     l5 : "More",
     // links
-    link1 : 'index',  // simply change these to change menu for whole site
+    link1 : 'index.html',  // simply change these to change menu for whole site
     link2 : "casino.html",
-    link3 : "blackjack",
-    link4 : "bj-custom",
+    link3 : "blackjack.html",
+    link4 : "bj-custom.html",
     link5 : "testsheet.html",
   
     // (B) INITIALIZE GAME

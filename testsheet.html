@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>Probability Sheet</title>
+<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/mobile.css">
+<link id="tablestyle" rel="stylesheet" href="css/table-light.css">
+<script src="js/menu.js"></script>
+<script src="js/latest.js"></script>
+<script src="js/dark2.js"></script>
+
+<script src="js/jQuery.js"></script>
+<script src="js/jquery.csvToTable.js"></script>
+
+</head>
+<body>
+<div id="container">
+  <div id="header">
+    <h1>ACE OF VEGAS</h1>
+  </div>
+  <nav id="menu">
+    <ul>
+      <li><a id="menu1" href="#">Soccer</a></li>
+      <li><a id="menu2" href="basketball.html">Basketball</a></li>
+      <li><a id="menu3" href="blackj.html">Tennis</a></li>
+      <li><a id="menu4" href="cricket.html">Cricket</a></li>
+      <li><a id="menu5" href="more.html">Sports</a></li>
+      <li class="lightswitch" onclick="darkfun()">💡 </li>
+    </ul>
+  </nav>
+  <div id="content">
+    <div id="sidebar-left">
+      <h3 id="js-head1" >Latest Scores</h3>
+      <a id="latest1" href="#" >Soccer: Manchester United 2 - 1 Liverpool</a>
+      <a id="latest2" href="#">Basketball: Lakers 110 - 105 Celtics</a>
+      <a id="latest3" href="#">Tennis: Djokovic beats Nadal in Australian Open final</a>
+      <a id="latest4" href="#">Cricket: India wins the test series against England</a>
+    </div>
+    
+    <div id="CSVTable" style="overflow-x:auto">
+      <p id="tabhead">Predictions 05/05/2023</p>
+      
+      <table>
+      <script>
+        $(function () {
+          $('#CSVTable').CSVToTable('csv/v3_4_2023-05-05.csv',{
+          tableClass: "full-width-table" // use a custom class for the table
+          });
+        });
+      </script>
+      </table>
+    </div>
+    <div id="sidebar-right">
+      <h3>Upcoming Events</h3>
+      <p>Soccer: Champions League quarter-finals on April 5th and 6th</p>
+      <p>Basketball: NBA playoffs start on April 16th</p>
+      <p>Tennis: French Open begins on May 22nd</p>
+      <p>Cricket: T20 World Cup starts on October 18th</p>
+    </div>
+  </div>
+  <div id="footer">
+    <p>© 2023 Ace of Vegas. All rights reserved.</p>
+  </div>
+</div>
+</body>
+
+
+</html>
