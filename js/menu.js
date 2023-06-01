@@ -10,7 +10,7 @@ var menu = {
     link2 : "casino.html",
     link3 : "blackjack.html",
     link4 : "bj-custom.html",
-    link5 : "testsheet.html",
+    link5 : "craps.html",
   
     // (B) INITIALIZE GAME
     init : () => {

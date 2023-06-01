@@ -15,10 +15,31 @@
       display: none;
     }
 }
-
+/* Define CSS variables for colors */ 
+ :root { 
+   --background-color: #ffffff; 
+   --menu-color: #292929; 
+   --nav-text: white; 
+   --text-color: black; 
+   --link-color: blue; 
+   --button-color: blue; 
+   --button-text-color: white; 
+   --subtext-color: #2b2b2b; 
+ } 
+ /* Dark mode styles */ 
+ .dark-mode { 
+   --background-color: #1f1f1f; /* Change the background color to black */ 
+   --text-color: #e3e3e3; /* Change the text color to white */ 
+   --link-color: white; /* Change the link color to white */ 
+   --button-color: blue; /* Change the button color to red */ 
+   --nav-color: #000000; 
+   --nav-text: white; 
+   --subtext-color: #c2c2c2; 
+ }
 body {
     font-family: Arial, sans-serif;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--background-color);
+    color: var(--text-color);
     margin: 0;
 }
 
@@ -33,10 +54,7 @@ body {
     text-align: left; /* align the text to the left */
   }
 
-.dark-mode {
-  background-color: rgb(31, 31, 31);
-  color: rgb(224, 224, 224);
-}
+
   
 #container {
   width: 100vw;
@@ -53,7 +71,7 @@ body {
 }
 
 #menu {
-  background-color: rgb(37, 37, 37);
+  background-color: var(--menu-color);
   position: sticky;
   top: 0;
 }
@@ -64,7 +82,7 @@ ul {
   padding: 0;
 }
 
-li, li.lightswitch { 
+li, li.toggle { 
   display: inline-block; 
 }
 
@@ -73,16 +91,19 @@ li {
   text-align: center;
 }
 
-li.lightswitch {
+li.toggle {
   width: 3vw;
   cursor: pointer;
 }
 
-a, li.lightswitch {
+a, li.toggle {
   display: inline-block;  /* this line fixed the menu not on same line bug*/
   color: white;
   padding: 10px;
   text-decoration: none;
+}
+#dark-mode-button {
+  background-color: var(--menu-color);
 }
 
 a:hover, li.lightswitch:hover {

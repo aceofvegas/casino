@@ -1,0 +1,46 @@
+<html>
+<head>
+
+<title>Craps</title>
+
+<link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/mobile.css">
+<link rel="stylesheet" href="css/craps.css">
+<script src="js/menu.js"></script>
+<script src="js/darkmode.js"></script>
+<script src="js/featured.js"></script>
+
+</head>
+<body>
+
+  <nav id="menu">
+    <ul>
+      <li><a id="menu1" href="#">Soccer</a></li>
+      <li><a id="menu2" href="basketball.html">Basketball</a></li>
+      <li><a id="menu3" href="blackj.html">Tennis</a></li>
+      <li><a id="menu4" href="cricket.html">Cricket</a></li>
+      <li><a id="menu5" href="more.html">Sports</a></li>
+      <li class="toggle"><button  id="dark-mode-button" onclick="toggleDarkMode()">💡</button></li>
+    </ul>
+  </nav>
+    <h1>Game of Craps</h1>
+    <p>Rules: You roll two dice. If the sum is 7 or 11 on the first roll, you win if you bet on pass line and lose if you bet on don't pass. If the sum is 2, 3, or 12 on the first roll, you lose if you bet on pass line and win if you bet on don't pass. If the sum is anything else, that becomes your point. You keep rolling until you either roll your point again and win if you bet on pass line and lose if you bet on don't pass, or roll a 7 and lose if you bet on pass line and win if you bet on don't pass.</p>
+    <div id="dice">
+        <span id="die1">1</span>
+        <span id="middle">-</span>
+        <span id="die2">1</span>
+    </div>
+    <div id="bet">
+        <button id="pass" onclick="betPass()">Bet on Pass Line</button>
+        <button id="dont" onclick="betDont()">Bet on Don't Pass</button>
+    </div>
+    <div id="money">
+        <p>Your money: $<span id="balance">1000</span></p>
+        <p>Your bet: $<input id="amount" type="number" min="1" max="1000" value="10"></p>
+    </div>
+    <button id="roll" onclick="rollDice()">Roll Dice</button>
+    <p id="message"></p>
+    <script src="js/craps.js"></script>
+</body>
+</html>
